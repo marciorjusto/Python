@@ -1,0 +1,83 @@
+CREATE TABLE PESSOAS
+( codigo   NUMBER(9) NOT NULL
+, nome     VARCHAR2(255)
+, telefone VARCHAR2(50)
+, email    VARCHAR2(4000)
+, datanasc DATE
+);
+
+-- ===== Comentário da tabela =====
+COMMENT ON TABLE PESSOAS
+     IS 'Marcio Justo - 02/06/2026: Tabela de exemplo que armazena os dados de algumas pessoas';
+
+-- ===== Comentários das colunas =====
+COMMENT ON COLUMN PESSOAS.codigo   IS 'Código';
+COMMENT ON COLUMN PESSOAS.nome     IS 'Nome';
+COMMENT ON COLUMN PESSOAS.telefone IS 'Telefone';
+COMMENT ON COLUMN PESSOAS.email    IS 'E-mail';
+COMMENT ON COLUMN PESSOAS.datanasc IS 'Data de nascimento - Formato DD/MM/YYYY';
+
+-- ===== Dados da tabela =====
+-- Mara Maravilha
+INSERT
+  INTO pessoas pes
+       ( pes.codigo
+       , pes.nome
+       , pes.telefone
+       , pes.datanasc
+       )
+VALUES ( 1
+       , 'Mara Maravilha'
+       , '(71) 9999-9999'
+       , 'mara@zipmail.com.br'
+       , TO_DATE('06/03/1968', 'DD/MM/YYYY')
+       )
+;
+
+-- David Gilmour
+INSERT
+  INTO pessoas pes
+       ( pes.codigo
+       , pes.nome
+       , pes.telefone
+       , pes.datanasc
+       )
+VALUES ( 2
+       , 'David Gilmour'
+       , NULL
+       , 'pinkfloyd@zipmail.com.br'
+       , TO_DATE('06/03/1946', 'DD/MM/YYYY')
+       )
+;
+
+-- Gabriel Garcia Marquez
+INSERT
+  INTO pessoas pes
+       ( pes.codigo
+       , pes.nome
+       , pes.telefone
+       , pes.datanasc
+       )
+VALUES ( 3
+       , 'Gabriel García Márquez'
+       , NULL
+       , 'gabo@zipmail.com.br'
+       , TO_DATE('06/03/1927', 'DD/MM/YYYY')
+       )
+;
+
+-- Vangelis
+INSERT
+  INTO pessoas pes
+       ( pes.codigo
+       , pes.nome
+       , pes.telefone
+       , pes.datanasc
+       )
+VALUES ( 4
+       , 'Evángelos Odysséas Papathanassíu'
+       , NULL
+       , 'vangelis@zipmail.com.br'
+       , TO_DATE('29/03/1943', 'DD/MM/YYYY')
+       )
+;
