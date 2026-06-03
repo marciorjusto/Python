@@ -24,6 +24,7 @@ INSERT
        ( pes.codigo
        , pes.nome
        , pes.telefone
+       , pes.email
        , pes.datanasc
        )
 VALUES ( 1
@@ -40,6 +41,7 @@ INSERT
        ( pes.codigo
        , pes.nome
        , pes.telefone
+       , pes.email
        , pes.datanasc
        )
 VALUES ( 2
@@ -56,6 +58,7 @@ INSERT
        ( pes.codigo
        , pes.nome
        , pes.telefone
+       , pes.email
        , pes.datanasc
        )
 VALUES ( 3
@@ -72,6 +75,7 @@ INSERT
        ( pes.codigo
        , pes.nome
        , pes.telefone
+       , pes.email
        , pes.datanasc
        )
 VALUES ( 4
